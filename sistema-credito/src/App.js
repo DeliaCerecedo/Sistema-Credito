@@ -10,9 +10,9 @@
 // import { useState } from "react";
 
 import "./App.css";
-// import { Login } from "./views/Login";
+import { Login } from "./views/Login";
 
-import { Wall } from "./views/Wall";
+// import { Wall } from "./views/Home";
 // import { Write } from "./views/Write";
 // import { Edit } from "./views/Edit";
 // import { Header } from "./components/Header";
@@ -68,8 +68,8 @@ function App() {
       {/* </Routes> */}
 
      
-      {/* <Login/> */}
-      <Wall/>
+      <Login/>
+      {/* <Wall/> */}
       {/* <Write/>
       <Edit/> */}
       {/* <Header/> */}
