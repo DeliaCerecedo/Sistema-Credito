@@ -1,83 +1,37 @@
-// import logo from './logo.svg';
-// import { collection, getDocs } from "firebase/firestore";
- 
-// import db from "./firebase/config";
+import firebaseApp from './firebase/config';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
-// import { getAuth, onAuthStateChanged } from "firebase/auth";
-
-
-// import { Routes, Route } from "react-router-dom";
-// import { useState } from "react";
+import React, {useState} from 'react';
+// import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
 
 import "./App.css";
-import { Login } from "./views/Login";
+import {Home} from "./views/Home";
+import {Login} from "./views/Login";
 
-// import { Wall } from "./views/Home";
-// import { Write } from "./views/Write";
-// import { Edit } from "./views/Edit";
-// import { Header } from "./components/Header";
-// import NotFound from "./views/NotFound";
-// import ContadorHooks from './components/pruebas/ContadorHooks';
-// import ScrollHooks from './components/pruebas/ContadorHooks'
-// import RelojHooks from './components/pruebas/RelojHooks';
-
-
+const auth = getAuth(firebaseApp);
 
 function App() {
+  const [user, setUser] = React.useState(null);
 
-  // const [getIdToEdit, setGetIdToEdit] = useState('');
-
-  // const [user, setUser] = useState(null);
-  
-  // const auth = getAuth();
-
-  // onAuthStateChanged(auth, (userAuth) => {
-  //   if (userAuth) {
-  //     setUser(userAuth)
-  //   } else {
-  //     setUser(null)
-  //   }
-  // });
-
-//  const initialNote = {
-//     titulo: "",
-//     contenido: "",
-//   }; 
-
-  // const [userNote, setUserNote] = useState(initialNote);
-
-  // const captureInputNote = (e) => {
-  //  console.log(e);
-  //   const { name, value } = e.target;
-  //   setUserNote({ ...userNote, [name]: value });
-  // };
+  onAuthStateChanged(auth, (usuarioFirebase) => {
+    if(usuarioFirebase){
+      setUser(usuarioFirebase);      
+    }else {
+      setUser(null);
+    }
 
 
-  // function setUserNull() {
-  //   setUser(null);
-  // }
+  })
 
   return (
     <div className="App">
-      {/* <Routes>
-        <Route path="/" element={<Login setUser={setUser}/>} /> */}
-        {/* <Route path="/wall" element={user?<Wall logOut={setUserNull}/> : <Login setUser={setUser} setGetIdToEdit={setGetIdToEdit}/>}/> */}
-        {/* <Route path="/write" element={<Write logOut={setUserNull}  setGetIdToEdit={setGetIdToEdit}/>} />
-        <Route path="/edit/:id" element={<Edit logOut={setUserNull}  setGetIdToEdit={setGetIdToEdit}  getIdToEdit={getIdToEdit}/>} />
-        <Route path="*" element={<NotFound />} /> */}
-      {/* </Routes> */}
-
-     
-      <Login/>
-      {/* <Wall/> */}
-      {/* <Write/>
-      <Edit/> */}
-      {/* <Header/> */}
-      {/* <ContadorHooks título= "Seguidores"/> */}
-      {/* <ScrollHooks/> */}
-      {/* <RelojHooks/> */}
+      { user ? <Home user={user}/>: <Login/>}
+      {/* <BrowserRouter>
+        <Route exact path='/' component={Home}></Route>
+      </BrowserRouter> */}
+      
     </div>
-  );
+  )
 }
 
 export default App;

@@ -1,109 +1,89 @@
-// import { logOutFirebase } from "../firebase/auth";
-// import { collection, getDocs, doc, deleteDoc } from "firebase/firestore";
-// import db from "../firebase/config";
+import { logOutFirebase, getAllClients } from "../firebase/auth";
 
-// import { useState, useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
-
+import React, { useState } from "react";
 import { Header } from "../components/Header";
-import { InnerContainer } from "../components/InnerContainer";
-// import { Exit } from "../components/Exit";
+import { Container, Stack, Form, Button, FormGroup, FormControl, Table } from "react-bootstrap";
 
-// import agregar_nota from "../images/agregar_nota.png";
-// import editar_nota from "../images/editar_nota.png";
-// import borrar_nota from "../images/borrar_nota.png";
+export function Home({ user }) {
+  const [clientes, setClientes] = useState([]);
 
-export function Wall() {
-  //   const navigate = useNavigate();
-
-  //   const buttonAddNote = () => {
-  //     navigate("/write");
-  //   };
-
-  //   const [noteList, setNoteList] = useState([]);
-
-  // función para renderizar la lista de notas
-
-  //   useEffect(() => {
-  //     const getNoteList = async () => {
-  //       try {
-  //         const querySnapshot = await getDocs(collection(db, "notes"));
-  //         const docs = [];
-  //         querySnapshot.forEach((doc) => {
-  //           docs.push({ ...doc.data(), id: doc.id });
-  //         });
-  //         setNoteList(docs);
-  //       } catch (error) {
-  //         console.log(error);
-  //       }
-  //     };
-  //     getNoteList();
-  //   }, []);
-
-  //   const delateNote = async (id) => {
-  //     await deleteDoc(doc(db, "notes", id));
-  //     const newNote = [...noteList.filter((item) => item.id !== id)];
-  //     setNoteList(newNote);
-  //   };
-
-  //   const [getIdToEdit, setGetIdToEdit] = useState('');
-
-  //   const editNote = (id) => {
-  //     console.log(id);
-  //     navigate("/edit/"+id);
-
-  //   };
 
   return (
-    <div className="wallContainer">
+    <div className="homeContainer">
       <header>
         <Header />
-        {/* <Exit logOut={logOut} /> */}
       </header>
-      <main className="wallMain">
-        <InnerContainer />
-        <div className="userName"></div>
+      <Container>
+        <Stack direction="horizontal" className="justify-content-between">
+          <p style={{fontSize: 25}} className="usuario" >Usuario: {user.email}</p>
+          <Button type="button" className="exit" onClick={logOutFirebase}>
+            Cerrar sesión
+          </Button>
+        </Stack>
+       
+        <Form>
+          <Stack direction="horizontal">
+            <FormGroup controlId="busqueda" className="w-75 m-3 ">
+              <FormControl type="text" placeholder="Buscar"/>
+            </FormGroup>
+            <Button variant="dark" type="submit">Buscar</Button>
+            <Button variant="light" type="buttom">Borrar</Button>
+          </Stack>
+        </Form>
 
-        {/* <div className="containerFather"> */}
-        {/* <div className="containerFather">
-            {noteList.map((newNote) => (
-              <div className="containerNote" key={newNote.id}> */}
-        {/* <div className="tituloInWall"> */}
-        {/* <p className="tituloInWall">{newNote.titulo}</p> */}
-        {/* </div> */}
+        <Table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Nombre</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            {clientes && clientes.map((cliente, index) =>(
+              <tr key={index}>
+                <td>{index+1}</td>
+                <td>{cliente.Nombre}</td>
+                <td>
+                  <Button variant="dark">Consultar</Button>
+                  <Button variant="danger">Registrar pago</Button>
+                  <Button variant="danger">Registrar nuevo crédito</Button>
+                  <Button variant="danger">Registrar pago</Button>eliminar
+                </td>
+              </tr>
+            ))}    
 
-        {/* <p className="textAreaInWall">{newNote.contenido}</p>
+            <tr>
+              <td>5821475</td>
+              <td>Daniel Gutiérrez</td>
+              <td></td>
+            </tr>
+          </tbody>
 
-                <button className="buttonEdit">
-                  <img
-                    src={editar_nota}
-                    onClick={() => editNote(newNote.id) } */}
-        {/* // onClick={() => editNote()}
-                    className="editar_nota"
-                    alt="imagen para editar una nota"
-                  />
-                </button>
-                  
-                <button  className="buttonDelete">
-                  <img
-                    src={borrar_nota}
-                    onClick={() => delateNote(newNote.id)}
-                    className="borrar_nota"
-                    alt="imagen para borrar una nota"
-                  />
-                </button>
-              </div> */}
-        {/* ))}
-          </div> */}
-        {/* </div> */}
 
-        {/* <img
-          src={agregar_nota}
-          onClick={() => buttonAddNote()}
-          className="agregar_nota"
-          alt="imagen para agregar una nota"
-        /> */}
-      </main>
+        </Table>
+      </Container>
     </div>
   );
 }
+
+// import { Header } from "../components/Header";
+// import { InnerContainer } from "../components/InnerContainer";
+
+// export function Home() {
+
+//   return (
+//     <div className="homeContainer">
+//       <header>
+//         <Header />
+//         {/* <Exit logOut={logOut} /> */}
+//       </header>
+//       <main className="homeMain">
+//         <InnerContainer />
+//         <div className="userName"></div>
+
+//       </main>
+//     </div>
+//   );
+// }

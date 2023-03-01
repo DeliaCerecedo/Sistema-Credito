@@ -1,41 +1,25 @@
-import {
-    GoogleAuthProvider,
-    signInWithPopup,
-    getAuth,
-    signOut,
-  } from "firebase/auth";
-  import { getFirestore, collection, addDoc,getDocs, doc, deleteDoc, getDoc, setDoc } from "firebase/firestore"; 
-  
-  
-  const auth = getAuth();
-  const provider = new GoogleAuthProvider();
-  
-  
-  export const googleAuth = () => {
-    
-    const promiseFirebase = signInWithPopup(auth, provider);
-    return promiseFirebase
-      .then((result) => {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        // The signed-in user info.
-        const user = result.user;
-      //  console.log(user.displayName, user.email);
-        return user;
-        // ...
-      })
-      .catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // The email of the user's account used.
-        const email = error.customData.email;
-        // The AuthCredential type that was used.
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        return error;
-        // ...
-      });
-  };
-  
-  export const logOutFirebase = () => signOut(auth);
+import firebaseApp from "./config";
+import { getAuth, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
+
+
+const auth = getAuth(firebaseApp);
+const db = getFirestore(firebaseApp);
+
+async function loginEmailPassword(email, password) {
+  signInWithEmailAndPassword(auth, email, password);
+}
+export default loginEmailPassword;
+
+export const logOutFirebase = () => signOut(auth);
+
+export async function getAllClients(){
+  const clientes = [];
+  const snapshot = await getDocs(db, collection("clientes"));
+  snapshot.forEach(doc => {
+    clientes.push(doc.data());
+  }); 
+  return clientes;
+}
+
+
