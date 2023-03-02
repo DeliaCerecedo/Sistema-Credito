@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Sistema-Credito/static/css/main.0d5c23d7.css",
+    "main.js": "/Sistema-Credito/static/js/main.49d859af.js",
+    "static/media/mision.png": "/Sistema-Credito/static/media/mision.6bd29acf88c52657271e.png",
+    "static/media/header.png": "/Sistema-Credito/static/media/header.ddab3818b533db814eb5.png",
+    "index.html": "/Sistema-Credito/index.html",
+    "main.0d5c23d7.css.map": "/Sistema-Credito/static/css/main.0d5c23d7.css.map",
+    "main.49d859af.js.map": "/Sistema-Credito/static/js/main.49d859af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d5c23d7.css",
+    "static/js/main.49d859af.js"
+  ]
+}
