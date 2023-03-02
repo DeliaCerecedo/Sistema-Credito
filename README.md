@@ -43,7 +43,7 @@ El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
 - [X] Algunos cliente sno tienen ningún pago realizado.
 - [X] Opción de registrar nuevo pago.
 
-## 4. Hacker Edition
+## 3. Hacker Edition
 
 - [X] Iniciar sesión mediante la dirección de correo electrónico y constraseña.
 - [X] Unir el proyecto a Firebase (Authentication y Cloude Firestore).
@@ -180,6 +180,12 @@ Yo como usuario del sistema de crédito quiero poder registrar un nuevo crédito
 - [ ] Deben haber recibido code review por parte del  leader del proyecto.
 - [ ] Todo el código está en la rama principal/main del repositorio.
 - [ ] La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
+
+## 5. Diseño de alta fidelidad
+
+Se anexa el link del figma donde se encuentra el diseño de alta fidelidad interactivo con la finalidad de conocer la secuencia del sistema de crédito. 
+
+[figma](https://www.figma.com/file/otXsYwTEsdkpZv8eVvRLCV/sistema-credito?node-id=0%3A1&t=IxWhFQG5x8Jg1C6z-0))
 
 
 
