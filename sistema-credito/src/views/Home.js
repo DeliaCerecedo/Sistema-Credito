@@ -1,11 +1,29 @@
 import { logOutFirebase, getAllClients } from "../firebase/auth";
-
-import React, { useState } from "react";
-import { Header } from "../components/Header";
 import { Container, Stack, Form, Button, FormGroup, FormControl, Table } from "react-bootstrap";
+
+import React, { useEffect, useState } from "react";
+import { Header } from "../components/Header";
+import ModalAñadir from "../components/ModalAñadir";
+
 
 export function Home({ user }) {
   const [clientes, setClientes] = useState([]);
+
+  const [isModalAñadir, setIsModalAñadir] = useState(false);
+  
+  function actualizarListaClientes() {
+    getAllClients().then((clientes) => {
+      setClientes(clientes)
+    });
+  }
+
+  function añadirClienteHome() {
+    setIsModalAñadir(true);
+  }
+
+  useEffect(() => {
+    actualizarListaClientes();
+  }, []);
 
 
   return (
@@ -14,6 +32,7 @@ export function Home({ user }) {
         <Header />
       </header>
       <Container>
+        <ModalAñadir isModalAñadir={isModalAñadir} setIsModalAñadir={setIsModalAñadir} actualizarListaClientes={actualizarListaClientes} />
         <Stack direction="horizontal" className="justify-content-between">
           <p style={{fontSize: 25}} className="usuario" >Usuario: {user.email}</p>
           <Button type="button" className="exit" onClick={logOutFirebase}>
@@ -34,7 +53,8 @@ export function Home({ user }) {
         <Table>
           <thead>
             <tr>
-              <th>id</th>
+              <th>#</th>
+              <th>Id</th>
               <th>Nombre</th>
               <th>Acción</th>
             </tr>
@@ -44,46 +64,21 @@ export function Home({ user }) {
             {clientes && clientes.map((cliente, index) =>(
               <tr key={index}>
                 <td>{index+1}</td>
+                <td>{cliente.sku}</td>
                 <td>{cliente.Nombre}</td>
                 <td>
                   <Button variant="dark">Consultar</Button>
                   <Button variant="danger">Registrar pago</Button>
-                  <Button variant="danger">Registrar nuevo crédito</Button>
-                  <Button variant="danger">Registrar pago</Button>eliminar
+                  <Button variant="dark">Registrar nuevo crédito</Button>
+                  <Button variant="danger">Eliminar</Button>
                 </td>
               </tr>
             ))}    
-
-            <tr>
-              <td>5821475</td>
-              <td>Daniel Gutiérrez</td>
-              <td></td>
-            </tr>
           </tbody>
-
-
         </Table>
+        <Button onClick={añadirClienteHome}>Registrar cliente</Button>
       </Container>
     </div>
   );
 }
 
-// import { Header } from "../components/Header";
-// import { InnerContainer } from "../components/InnerContainer";
-
-// export function Home() {
-
-//   return (
-//     <div className="homeContainer">
-//       <header>
-//         <Header />
-//         {/* <Exit logOut={logOut} /> */}
-//       </header>
-//       <main className="homeMain">
-//         <InnerContainer />
-//         <div className="userName"></div>
-
-//       </main>
-//     </div>
-//   );
-// }
