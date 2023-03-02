@@ -185,7 +185,7 @@ Yo como usuario del sistema de crédito quiero poder registrar un nuevo crédito
 
 Se anexa el link del figma donde se encuentra el diseño de alta fidelidad interactivo con la finalidad de conocer la secuencia del sistema de crédito. 
 
-[figma](https://www.figma.com/file/otXsYwTEsdkpZv8eVvRLCV/sistema-credito?node-id=0%3A1&t=IxWhFQG5x8Jg1C6z-0))
+([figma](https://www.figma.com/file/otXsYwTEsdkpZv8eVvRLCV/sistema-credito?node-id=0%3A1&t=IxWhFQG5x8Jg1C6z-0))
 
 
 
