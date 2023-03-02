@@ -189,7 +189,7 @@ Se anexa el link del figma donde se encuentra el diseño de alta fidelidad inter
 
 * Prototipo de alta fidelidad HU1.
 
-[/Sistema-Credito/HU1.jpg](https://github.com/DeliaCerecedo/Sistema-Credito/edit/main/README.md)
+[/Sistema-Credito/HU1.jpg](Sistema-Credito/img/HU1.jpg)
 
 
 * Prototipo de alta fidelidad HU2.
