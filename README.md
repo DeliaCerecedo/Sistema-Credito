@@ -207,8 +207,8 @@ Se anexa el link del figma donde se encuentra el diseño de alta fidelidad inter
 
 - Se puede ingresar mediante una cuenta de correo electrónico que previamente se dió de dalta en firebase (dhdiaz@gmail.com, password: 123456).
 - Al ingresar, en el siguiente layout llamado Home, tenemos lo siguiente:
-  > muestra una lista de los clientes (se dieron de alta previamente), esta tabla se actualiza automáticamente y muestra en pantalla los datos que se agregaron manualmente en firebase.
- > Se observa el email del usuario y no el nombre como se había planeado, sin embargo, se puede plantear dejarlo así o buscar mostrar el nombre.
+  >* muestra una lista de los clientes (se dieron de alta previamente), esta tabla se actualiza automáticamente y muestra en pantalla los datos que se agregaron manualmente en firebase.
+  >* Se observa el email del usuario y no el nombre como se había planeado, sin embargo, se puede plantear dejarlo así o buscar mostrar el nombre.
 -   ÚNICAMENTE funcionan dos botones: Cerrar sesión y Registrar nuevo cliente.
 - Se cierra sesión desde el layout Home.
 - Al dar click en registrar cliente, obtenemos un Modal donde vienen las entradas para registrar al cliente, sin embargo, al intentar    
