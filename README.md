@@ -29,11 +29,11 @@ Tendrás una semana después de recibir la prueba.
 
 ¡Éxito!
 
-## 2. Resumen del Proyecto
+## 2. Criterios de Aceptación
 
-El proyecto es debe contener, al menos, las siguiente tareas:
+El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
 
-- [X]  Es un sistema de crédito.
+* Es un sistema de crédito.
 * Tiene clientes registrados
 * Opción de dar de atla nuevos clientes con un monto de dinero solicitado.
 * Algunos clientes tienen más de 1 crédito.
@@ -43,9 +43,126 @@ El proyecto es debe contener, al menos, las siguiente tareas:
 * Algunos cliente sno tienen ningún pago realizado.
 * Opción de registrar nuevo pago.
 
+### Historias de usuario
 
+#### [Historia de usuario 1]
 
+Yo como usuario del sistema de crédito quiero poder iniciar sesión con correo electrónico y contraseña para poder manipular y ver los datos de los clientes.
 
+**Criterios de Aceptación.**
+
+- [X] Quiero poder iniciar sesión con email y password.
+- [X] Quiero que se oculte el texto escrito en el campo de contraseña.
+- [ ] Quiero mensajes descriptivo en caso de que mi cuenta o contaseña no sean válidas, en caso de no tener una cuenta.
+- [X] Quiero ir directamente al muro para poder ver la tabla que contiene la lista de los clientes.
+ 
+**Definición de Terminado.**
+
+- [X] Debe ser responsive
+- [ ] Testearon manualmente buscando errores e imperfecciones simples.
+- [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
+- [ ] Deben haber recibido code review por parte del  leader del proyecto.
+
+#### [Historia de usuario 2]
+
+Yo como usuario del sistema de crédito quiero poder ver una tabla con la lista de clientes para poder manipular y ver los datos de los clientes.
+
+**Criterios de Aceptación.**
+
+- [X] Quiero poder cerrar sesión.
+- [X] Quiero ver el nombre del usuario que ingreso con su correo electrónico y contraseña.
+- [ ] Quiero poder hacer una búsqueda por nombre del cliente y borrar el nombre en la búsqueda.
+- [X] Quiero ver la tabla que contiene la lista de los clientes con la siguiente información: Id, Nombre y acciones a realizar.
+- [ ] Quiero tener un botón que me permita consultar la información completa de cada uno de los clientes.
+- [ ] Quiero tener un botón que me permita registrar un pago.
+- [ ] Quiero tener un botón que me permita registrar un nuevo crédito.
+- [ ] Quiero tener un botón que me permita eliminar a un cliente pero que quede registrado en la base de datos quien realizó          esta acción.
+- [ ] Quiero poder registrar un nuevo cliente.
+ 
+**Definición de Terminado.**
+
+- [X] Debe ser responsive
+- [ ] Testearon manualmente buscando errores e imperfecciones simples.
+- [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
+- [ ] Deben haber recibido code review por parte del  leader del proyecto.
+
+#### [Historia de usuario 3]
+
+Yo como usuario del sistema de crédito quiero poder registrar un nuevo cliente para tener todos sus datos.
+
+**Criterios de Aceptación.**
+
+- [X] Quiero poder cancelar el proceso de registro.
+- [ ] Quiero poder escribir los siguientes datos: Id, Nombre, apellido paterno, apellido materno, monto solicitado, monto             aprobado, fecha de la aprobación, correo electrónico, teléfono, Dirección con calle, número exterior, número interior,         colonia, alcaldía, CP y estado.
+- [ ] Quiero poder registrar la información del cliente.
+- [ ] Quiero después de registrar al cliente, regresal al muro donde se encuentra la tabla con la lista de los clientes.
+ 
+**Definición de Terminado.**
+
+- [X] Debe ser responsive
+- [ ] Testearon manualmente buscando errores e imperfecciones simples.
+- [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
+- [ ] Deben haber recibido code review por parte del  leader del proyecto.
+
+#### [Historia de usuario 4]
+
+Yo como usuario del sistema de crédito quiero poder consultar toda la información del cada cliente para poder verificar y consultar el estado de los créditos de cada cliente.
+
+**Criterios de Aceptación.**
+
+- [ ] Quiero poder regresar a ver la lista de clientes.
+- [ ] Quiero poder visualizar los siguientes datos: Id, Nombre, apellido paterno, apellido materno, monto solicitado, monto           aprobado, fecha de la aprobación, correo electrónico, teléfono, Dirección con calle, número exterior, número interior,         colonia, alcaldía, CP y estado.
+- [ ] Quiero una tabla que contenga los siguientes datos: número de crédito, estado (liquidado o no), Monto solicitado, monto aprobado, pagos realizados junto con el monto y la fecha en que se realizó dicho pago, el monto total pagado y el monto que se adeuda. 
+- [ ] Quiero poder registrar un nuevo pago.
+- [ ] Quiero después de registrar el nuevo pago o de terminar la consulta en general, regresal al muro donde se encuentra la tabla con la lista de los clientes.
+ 
+**Definición de Terminado.**
+
+- [ ] Debe ser responsive
+- [ ] Testearon manualmente buscando errores e imperfecciones simples.
+- [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
+- [ ] Deben haber recibido code review por parte del  leader del proyecto.
+
+#### [Historia de usuario 5]
+
+Yo como usuario del sistema de crédito quiero poder registrar un nuevo pago para tener el registro y control de los pagos realizados por cada cliente.
+
+**Criterios de Aceptación.**
+
+- [ ] Quiero poder ver los siguientes datos: Id y nombre.
+- [ ] Quiero poder cancelar el proceso de registro.
+- [ ] Quiero poder elegir el crédito al que se realizará el pago.
+- [ ] Quiero poder escribir el monto del pago.
+- [ ] Quiero poder registrar un nuevo pago.
+- [ ] Quiero después de registrar el nuevo pago, regresal al muro donde se encuentra la tabla con la lista de los clientes.
+ 
+**Definición de Terminado.**
+
+- [ ] Debe ser responsive
+- [ ] Testearon manualmente buscando errores e imperfecciones simples.
+- [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
+- [ ] Deben haber recibido code review por parte del  leader del proyecto.
+
+#### [Historia de usuario 6]
+
+Yo como usuario del sistema de crédito quiero poder registrar un nuevo crédito para tener el registro y control de los créditos obtenidos por cada cliente.
+
+**Criterios de Aceptación.**
+
+- [ ] Quiero poder ver los siguientes datos: Id y nombre.
+- [ ] Quiero poder cancelar el proceso de registro.
+- [ ] Quiero poder escribir el monto solicitdado por el cliente.
+- [ ] Quiero poder escribir el monto aprobado.
+- [ ] uiero poder escribir el número de crédito. 
+- [ ] Quiero poder registrar un nuevo crédito.
+- [ ] Quiero después de registrar el nuevo crédito, regresal al muro donde se encuentra la tabla con la lista de los clientes.
+ 
+**Definición de Terminado.**
+
+- [ ] Debe ser responsive
+- [ ] Testearon manualmente buscando errores e imperfecciones simples.
+- [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
+- [ ] Deben haber recibido code review por parte del  leader del proyecto.
 
 
 
