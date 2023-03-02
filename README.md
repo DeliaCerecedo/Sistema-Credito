@@ -31,9 +31,20 @@ Tendrás una semana después de recibir la prueba.
 
 ## 2. Resumen del Proyecto
 
-El proyecto debe contener, al menos, las siguiente tareas:
+El proyecto es debe contener, al menos, las siguiente tareas:
 
-* sdf
+- [X]  Es un sistema de crédito.
+* Tiene clientes registrados
+* Opción de dar de atla nuevos clientes con un monto de dinero solicitado.
+* Algunos clientes tienen más de 1 crédito.
+* Cada crédito se paga en 4 parcialidades.
+* Algunos clinetes ya tienen su centa liquidada.
+* Algunos clientes tienen algunos pagos.
+* Algunos cliente sno tienen ningún pago realizado.
+* Opción de registrar nuevo pago.
+
+
+
 
 
 
