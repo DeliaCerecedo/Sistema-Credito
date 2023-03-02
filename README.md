@@ -4,12 +4,12 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Organización del proyecto](#2-organización-del-proyecto)
-* [3. Objetivos de Aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Consideraciones técnicas](#6-consideraciones-técnicas)
-* [7. Hacker Edition](#7-hacker-edition)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [3. Criterios de Aceptación](#3-criterios-de-aceptación)
+* [4. Hacker Edition](#4-hacker-edition)
+* [5. Estado actual del proyectoo](#5-estado-actual-del-proyecto)
+* [6. Diseño de alta fidelidad](#6-cdiseño-de-alta-fidelidad)
+* [7. Historias de usuario](#7-historias-de-usuario)
+
 
 ***
 
