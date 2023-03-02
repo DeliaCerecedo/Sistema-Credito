@@ -74,7 +74,7 @@ Yo como usuario del sistema de crédito quiero poder iniciar sesión con correo 
 
 Yo como usuario del sistema de crédito quiero poder ver una tabla con la lista de clientes para poder manipular y ver los datos de los clientes.
 
-**Criterios de Aceptación.**
+**Criterios de Aceptación del proyecto.**
 
 - [X] Quiero poder cerrar sesión.
 - [X] Quiero ver el nombre del usuario que ingreso con su correo electrónico y contraseña.
@@ -187,30 +187,22 @@ Se anexa el link del figma donde se encuentra el diseño de alta fidelidad inter
 
 [Prototipo de alta fidelidad interactivo](https://www.figma.com/file/otXsYwTEsdkpZv8eVvRLCV/sistema-credito?node-id=0%3A1&t=IxWhFQG5x8Jg1C6z-0)
 
-* Prototipo de alta fidelidad HU1.
+## 6. Organización del proyecto
 
-[/Sistema-Credito/HU1.jpg](Sistema-Credito/img/HU1.jpg)
+* Se realizó una lectura general del proyecto para obtener los criterios de aceptación.
+* En base a los criterios de aceptación se propusieron 2 Hacker Edition para mejorar el proyecto.
+* Se realizó un prototipo de baja fidelidad en base a los criterios de aceptación planteados para tener una idea de los layouts.
+* Se realizó una encuesta para preguntar a un tercero sobre la interfaz propuesta en cuanto a su manejo, estética, funcionalidad, etc.
+* Se aplicaron los cambios de acuerdo a la retroalimentación obtenido.
+* Se realizaron las Historias de Usuario pertinentes para cubrir los criterios de aceptación del proyecto.
+* Se realizó prototipo de alta fidelidad en figma.
+* Se realizó una encuesta se realizó una prueba de usabilidad en figma interactivo para preguntar a un tercero sobre la interfaz propuesta en cuanto a su manejo, estética, funcionalidad, etc.
+* Se aplicaron los cambios de acuerdo a la retroalimentación obtenida.
+* Se realizaron las HU necesarias para cumplir con los requerimientos del proyecto, así como las Historias de Usuario y           Criterios de Terminación de cada una.
+* Se comenzó a codear en React.js
 
+## 7. Estado actual del proyecto
 
-* Prototipo de alta fidelidad HU2.
-
-
-
-* Prototipo de alta fidelidad HU3.
-
-
-
-
-* Prototipo de alta fidelidad HU4.
-
-
-
-
-
-* Prototipo de alta fidelidad HU5.
-
-
-
-* Prototipo de alta fidelidad HU6.
+- Se puede ingresar mediante una cuenta de correo electrónico que previamente se dió de dalta en firebase.
 
 
