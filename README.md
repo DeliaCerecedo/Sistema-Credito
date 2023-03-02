@@ -189,7 +189,7 @@ Se anexa el link del figma donde se encuentra el diseño de alta fidelidad inter
 
 * Prototipo de alta fidelidad HU1.
 
-
+![Prototipo de alta fidelidad](/HU1.jpg)
 
 
 * Prototipo de alta fidelidad HU2.
