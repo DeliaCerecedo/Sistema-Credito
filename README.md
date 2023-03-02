@@ -33,17 +33,22 @@ Tendrás una semana después de recibir la prueba.
 
 El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
 
-* Es un sistema de crédito.
-* Tiene clientes registrados
-* Opción de dar de atla nuevos clientes con un monto de dinero solicitado.
-* Algunos clientes tienen más de 1 crédito.
-* Cada crédito se paga en 4 parcialidades.
-* Algunos clinetes ya tienen su centa liquidada.
-* Algunos clientes tienen algunos pagos.
-* Algunos cliente sno tienen ningún pago realizado.
-* Opción de registrar nuevo pago.
+- [X] Es un sistema de crédito.
+- [X] Tiene clientes registrados
+- [X] Opción de dar de atla nuevos clientes con un monto de dinero solicitado.
+- [X] Algunos clientes tienen más de 1 crédito.
+- [X] Cada crédito se paga en 4 parcialidades.
+- [X] Algunos clinetes ya tienen su centa liquidada.
+- [X] Algunos clientes tienen algunos pagos.
+- [X] Algunos cliente sno tienen ningún pago realizado.
+- [X] Opción de registrar nuevo pago.
 
-### Historias de usuario
+## 4. Hacker Edition
+
+- [X] Iniciar sesión mediante la dirección de correo electrónico y constraseña.
+- [X] Unir el proyecto a Firebase (Authentication y Cloude Firestore).
+
+## 4. Historias de usuario
 
 #### [Historia de usuario 1]
 
@@ -62,6 +67,8 @@ Yo como usuario del sistema de crédito quiero poder iniciar sesión con correo 
 - [ ] Testearon manualmente buscando errores e imperfecciones simples.
 - [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
 - [ ] Deben haber recibido code review por parte del  leader del proyecto.
+- [X] Todo el código está en la rama principal/main del repositorio.
+- [X] La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
 
 #### [Historia de usuario 2]
 
@@ -85,6 +92,8 @@ Yo como usuario del sistema de crédito quiero poder ver una tabla con la lista 
 - [ ] Testearon manualmente buscando errores e imperfecciones simples.
 - [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
 - [ ] Deben haber recibido code review por parte del  leader del proyecto.
+- [X] Todo el código está en la rama principal/main del repositorio.
+- [X] La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
 
 #### [Historia de usuario 3]
 
@@ -96,13 +105,15 @@ Yo como usuario del sistema de crédito quiero poder registrar un nuevo cliente 
 - [ ] Quiero poder escribir los siguientes datos: Id, Nombre, apellido paterno, apellido materno, monto solicitado, monto             aprobado, fecha de la aprobación, correo electrónico, teléfono, Dirección con calle, número exterior, número interior,         colonia, alcaldía, CP y estado.
 - [ ] Quiero poder registrar la información del cliente.
 - [ ] Quiero después de registrar al cliente, regresal al muro donde se encuentra la tabla con la lista de los clientes.
- 
+  
 **Definición de Terminado.**
 
 - [X] Debe ser responsive
 - [ ] Testearon manualmente buscando errores e imperfecciones simples.
 - [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
 - [ ] Deben haber recibido code review por parte del  leader del proyecto.
+- [X] Todo el código está en la rama principal/main del repositorio.
+- [X] La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
 
 #### [Historia de usuario 4]
 
@@ -122,6 +133,8 @@ Yo como usuario del sistema de crédito quiero poder consultar toda la informaci
 - [ ] Testearon manualmente buscando errores e imperfecciones simples.
 - [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
 - [ ] Deben haber recibido code review por parte del  leader del proyecto.
+- [ ] Todo el código está en la rama principal/main del repositorio.
+- [ ] La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
 
 #### [Historia de usuario 5]
 
@@ -142,6 +155,8 @@ Yo como usuario del sistema de crédito quiero poder registrar un nuevo pago par
 - [ ] Testearon manualmente buscando errores e imperfecciones simples.
 - [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
 - [ ] Deben haber recibido code review por parte del  leader del proyecto.
+- [ ] Todo el código está en la rama principal/main del repositorio.
+- [ ] La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
 
 #### [Historia de usuario 6]
 
@@ -163,6 +178,8 @@ Yo como usuario del sistema de crédito quiero poder registrar un nuevo crédito
 - [ ] Testearon manualmente buscando errores e imperfecciones simples.
 - [ ] Hacer 2 pruebas de usabilidad e incorporaron el feedback de los usuarios como mejoras.
 - [ ] Deben haber recibido code review por parte del  leader del proyecto.
+- [ ] Todo el código está en la rama principal/main del repositorio.
+- [ ] La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
 
 
 
