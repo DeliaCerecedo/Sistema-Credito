@@ -29,6 +29,12 @@ Tendrás una semana después de recibir la prueba.
 
 ¡Éxito!
 
+## 2. Resumen del Proyecto
+
+El proyecto debe contener, al menos, las siguiente tareas:
+
+* sdf
+
 
 
 
