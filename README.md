@@ -187,5 +187,30 @@ Se anexa el link del figma donde se encuentra el diseño de alta fidelidad inter
 
 [Prototipo de alta fidelidad interactivo](https://www.figma.com/file/otXsYwTEsdkpZv8eVvRLCV/sistema-credito?node-id=0%3A1&t=IxWhFQG5x8Jg1C6z-0)
 
+* Prototipo de alta fidelidad HU1.
+
+
+
+
+* Prototipo de alta fidelidad HU2.
+
+
+
+* Prototipo de alta fidelidad HU3.
+
+
+
+
+* Prototipo de alta fidelidad HU4.
+
+
+
+
+
+* Prototipo de alta fidelidad HU5.
+
+
+
+* Prototipo de alta fidelidad HU6.
 
 
