@@ -47,6 +47,8 @@ El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
 
 - [X] Iniciar sesión mediante la dirección de correo electrónico y constraseña.
 - [X] Unir el proyecto a Firebase (Authentication y Cloude Firestore).
+- [ ] Conocer el nombre del usuario que eliminó a clientes.
+- [ ] Buscar a un cliente por nombre.
 
 ## 4. Historias de usuario
 
@@ -190,7 +192,7 @@ Se anexa el link del figma donde se encuentra el diseño de alta fidelidad inter
 ## 6. Organización del proyecto
 
 * Se realizó una lectura general del proyecto para obtener los criterios de aceptación.
-* En base a los criterios de aceptación se propusieron 2 Hacker Edition para mejorar el proyecto.
+* En base a los criterios de aceptación se propusieron varias Hacker Edition para mejorar el proyecto.
 * Se realizó un prototipo de baja fidelidad en base a los criterios de aceptación planteados para tener una idea de los layouts.
 * Se realizó una encuesta para preguntar a un tercero sobre la interfaz propuesta en cuanto a su manejo, estética, funcionalidad, etc.
 * Se aplicaron los cambios de acuerdo a la retroalimentación obtenido.
@@ -203,6 +205,12 @@ Se anexa el link del figma donde se encuentra el diseño de alta fidelidad inter
 
 ## 7. Estado actual del proyecto
 
-- Se puede ingresar mediante una cuenta de correo electrónico que previamente se dió de dalta en firebase.
+- Se puede ingresar mediante una cuenta de correo electrónico que previamente se dió de dalta en firebase (dhdiaz@gmail.com, password: 123456).
+- Al ingresar, en el siguiente layout llamado Home, tenemos lo siguiente:
+  > muestra una lista de los clientes (se dieron de alta previamente), esta tabla se actualiza automáticamente y muestra en pantalla los datos que se agregaron manualmente en firebase.
+ > Se observa el email del usuario y no el nombre como se había planeado, sin embargo, se puede plantear dejarlo así o buscar mostrar el nombre.
+-   ÚNICAMENTE funcionan dos botones: Cerrar sesión y Registrar nuevo cliente.
+- Se cierra sesión desde el layout Home.
+- Al dar click en registrar cliente, obtenemos un Modal donde vienen las entradas para registrar al cliente, sin embargo, al intentar    
 
 
