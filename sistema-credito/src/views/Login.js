@@ -1,4 +1,4 @@
-import loginEmailPassword from "../firebase/auth";
+import {loginEmailPassword} from "../firebase/auth";
 
 import React from "react";
 
