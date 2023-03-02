@@ -29,7 +29,21 @@ Tendrás una semana después de recibir la prueba.
 
 ¡Éxito!
 
-## 2. Criterios de Aceptación
+## 2. Organización del proyecto
+
+* Se realizó una lectura general del proyecto para obtener los criterios de aceptación.
+* En base a los criterios de aceptación se propusieron varias Hacker Edition para mejorar el proyecto.
+* Se realizó un prototipo de baja fidelidad en base a los criterios de aceptación planteados para tener una idea de los layouts.
+* Se realizó una encuesta para preguntar a un tercero sobre la interfaz propuesta en cuanto a su manejo, estética, funcionalidad, etc.
+* Se aplicaron los cambios de acuerdo a la retroalimentación obtenido.
+* Se realizaron las Historias de Usuario pertinentes para cubrir los criterios de aceptación del proyecto.
+* Se realizó prototipo de alta fidelidad en figma.
+* Se realizó una encuesta se realizó una prueba de usabilidad en figma interactivo para preguntar a un tercero sobre la interfaz propuesta en cuanto a su manejo, estética, funcionalidad, etc.
+* Se aplicaron los cambios de acuerdo a la retroalimentación obtenida.
+* Se realizaron las HU necesarias para cumplir con los requerimientos del proyecto, así como las Historias de Usuario y           Criterios de Terminación de cada una.
+* Se comenzó a codear en React.js
+
+## 3. Criterios de Aceptación
 
 El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
 
@@ -43,14 +57,36 @@ El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
 - [X] Algunos cliente sno tienen ningún pago realizado.
 - [X] Opción de registrar nuevo pago.
 
-## 3. Hacker Edition
+## 4. Hacker Edition
 
 - [X] Iniciar sesión mediante la dirección de correo electrónico y constraseña.
 - [X] Unir el proyecto a Firebase (Authentication y Cloude Firestore).
 - [ ] Conocer el nombre del usuario que eliminó a clientes.
 - [ ] Buscar a un cliente por nombre.
 
-## 4. Historias de usuario
+## 5. Estado actual del proyecto
+
+- Se puede ingresar mediante una cuenta de correo electrónico que previamente se dió de dalta en firebase (dhdiaz@gmail.com, password: 123456).
+- Al ingresar, en el siguiente layout llamado Home, se observa:
+  >* Se muestra una lista de los clientes que se dieron de alta previamente en firebase, esta tabla se actualiza automáticamente.
+  >* Se observa el email del usuario y no el nombre como se había planeado, sin embargo, se puede plantear dejarlo así o buscar mostrar el nombre.
+  >* ÚNICAMENTE funcionan dos botones: Cerrar sesión y Registrar nuevo cliente.
+  >* Se cierra sesión desde el layout Home.
+  >* Al dar click en registrar cliente, obtenemos un Modal equivalente al layout llamados Registrar nuevo cliente. 
+- En el Layout Registar nuevo cliente mencionado, se tiene:
+  >* Dos entradas: id y nombre y dos botónes.
+  >* Se deben agregar más entradas para obtener los datos completos del cliente.
+  >* El Botón de cancelar funciona por lo que se puede regresar al layout de Home.
+  >* E Botón de Registrar no funciona.
+ - Se debe dar maquetación a los alyout Home y Registrar nuevo cliente.
+
+## 6. Diseño de alta fidelidad
+
+Se anexa el link del figma donde se encuentra el diseño de alta fidelidad interactivo con la finalidad de conocer la secuencia del sistema de crédito. 
+
+[Prototipo de alta fidelidad interactivo](https://www.figma.com/file/otXsYwTEsdkpZv8eVvRLCV/sistema-credito?node-id=0%3A1&t=IxWhFQG5x8Jg1C6z-0)
+
+## 7. Historias de usuario
 
 #### [Historia de usuario 1]
 
@@ -183,34 +219,8 @@ Yo como usuario del sistema de crédito quiero poder registrar un nuevo crédito
 - [ ] Todo el código está en la rama principal/main del repositorio.
 - [ ] La página está publicada en Github Pages y es accesible mediante un enlace/link/liga.
 
-## 5. Diseño de alta fidelidad
 
-Se anexa el link del figma donde se encuentra el diseño de alta fidelidad interactivo con la finalidad de conocer la secuencia del sistema de crédito. 
 
-[Prototipo de alta fidelidad interactivo](https://www.figma.com/file/otXsYwTEsdkpZv8eVvRLCV/sistema-credito?node-id=0%3A1&t=IxWhFQG5x8Jg1C6z-0)
 
-## 6. Organización del proyecto
-
-* Se realizó una lectura general del proyecto para obtener los criterios de aceptación.
-* En base a los criterios de aceptación se propusieron varias Hacker Edition para mejorar el proyecto.
-* Se realizó un prototipo de baja fidelidad en base a los criterios de aceptación planteados para tener una idea de los layouts.
-* Se realizó una encuesta para preguntar a un tercero sobre la interfaz propuesta en cuanto a su manejo, estética, funcionalidad, etc.
-* Se aplicaron los cambios de acuerdo a la retroalimentación obtenido.
-* Se realizaron las Historias de Usuario pertinentes para cubrir los criterios de aceptación del proyecto.
-* Se realizó prototipo de alta fidelidad en figma.
-* Se realizó una encuesta se realizó una prueba de usabilidad en figma interactivo para preguntar a un tercero sobre la interfaz propuesta en cuanto a su manejo, estética, funcionalidad, etc.
-* Se aplicaron los cambios de acuerdo a la retroalimentación obtenida.
-* Se realizaron las HU necesarias para cumplir con los requerimientos del proyecto, así como las Historias de Usuario y           Criterios de Terminación de cada una.
-* Se comenzó a codear en React.js
-
-## 7. Estado actual del proyecto
-
-- Se puede ingresar mediante una cuenta de correo electrónico que previamente se dió de dalta en firebase (dhdiaz@gmail.com, password: 123456).
-- Al ingresar, en el siguiente layout llamado Home, tenemos lo siguiente:
-  >* muestra una lista de los clientes (se dieron de alta previamente), esta tabla se actualiza automáticamente y muestra en pantalla los datos que se agregaron manualmente en firebase.
-  >* Se observa el email del usuario y no el nombre como se había planeado, sin embargo, se puede plantear dejarlo así o buscar mostrar el nombre.
--   ÚNICAMENTE funcionan dos botones: Cerrar sesión y Registrar nuevo cliente.
-- Se cierra sesión desde el layout Home.
-- Al dar click en registrar cliente, obtenemos un Modal donde vienen las entradas para registrar al cliente, sin embargo, al intentar    
-
+ 
 
