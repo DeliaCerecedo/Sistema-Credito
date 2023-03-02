@@ -79,7 +79,7 @@ El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
   >* El Botón de cancelar funciona por lo que se puede regresar al layout de Home.
   >* E Botón de Registrar no funciona.
  - Se debe dar maquetación a los alyout Home y Registrar nuevo cliente.
- -El poryecto se encuentra en gh-pages, el link es el siguiente: [Sistema de crédito](https://deliacerecedo.github.io/Sistema-Credito/)
+ - El poryecto se encuentra en gh-pages, el link es el siguiente: [Sistema de crédito](https://deliacerecedo.github.io/Sistema-Credito/)
 
 ## 6. Diseño de alta fidelidad
 
