@@ -40,7 +40,7 @@ Tendrás una semana después de recibir la prueba.
 * Se realizó prototipo de alta fidelidad en figma.
 * Se realizó una encuesta se realizó una prueba de usabilidad en figma interactivo para preguntar a un tercero sobre la interfaz propuesta en cuanto a su manejo, estética, funcionalidad, etc.
 * Se aplicaron los cambios de acuerdo a la retroalimentación obtenida.
-* Se realizaron las HU necesarias para cumplir con los requerimientos del proyecto, así como las Historias de Usuario y           Criterios de Terminación de cada una.
+* Se realizaron las HU necesarias para cumplir con los requerimientos del proyecto, así como las Historias de Usuario y Criterios de Terminación de cada una.
 * Se comenzó a codear en React.js
 
 ## 3. Criterios de Aceptación
@@ -79,6 +79,7 @@ El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
   >* El Botón de cancelar funciona por lo que se puede regresar al layout de Home.
   >* E Botón de Registrar no funciona.
  - Se debe dar maquetación a los alyout Home y Registrar nuevo cliente.
+ -El poryecto se encuentra en gh-pages, el link es el siguiente: [Sistema de crédito](https://deliacerecedo.github.io/Sistema-Credito/)
 
 ## 6. Diseño de alta fidelidad
 
