@@ -7,7 +7,7 @@
 * [3. Criterios de Aceptación](#3-criterios-de-aceptación)
 * [4. Hacker Edition](#4-hacker-edition)
 * [5. Estado actual del proyectoo](#5-estado-actual-del-proyecto)
-* [6. Diseño de alta fidelidad](#6-cdiseño-de-alta-fidelidad)
+* [6. Diseño de alta fidelidad](#6-diseño-de-alta-fidelidad)
 * [7. Historias de usuario](#7-historias-de-usuario)
 
 
