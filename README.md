@@ -61,6 +61,7 @@ El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
 
 - [X] Iniciar sesión mediante la dirección de correo electrónico y constraseña.
 - [X] Unir el proyecto a Firebase (Authentication y Cloude Firestore).
+- [X] Responsive.
 - [ ] Conocer el nombre del usuario que eliminó a clientes.
 - [ ] Buscar a un cliente por nombre.
 
@@ -78,6 +79,7 @@ El proyecto es debe contener, al menos, los siguientes criterios de aceptación:
   >* Se deben agregar más entradas para obtener los datos completos del cliente.
   >* El Botón de cancelar funciona por lo que se puede regresar al layout de Home.
   >* E Botón de Registrar no funciona.
+ - Es reponsive.
  - Se debe dar maquetación a los alyout Home y Registrar nuevo cliente.
  - El poryecto se encuentra en gh-pages, el link es el siguiente: [Sistema de crédito](https://deliacerecedo.github.io/Sistema-Credito/) 
    >* NOTA: para ingresar al proyecto: dhdiaz@gmail.com, password: 123456
